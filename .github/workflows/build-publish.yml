@@ -8,7 +8,8 @@ permissions:
 
 jobs:
   build:
-     runs-on: ubuntu-latest
+     #runs-on: ubuntu-latest
+     runs-on: self-hosted
      env:
       OIDC_AUDIENCE: 'jfrog-github'
       OIDC_PROVIDER: 'github'
