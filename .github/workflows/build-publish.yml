@@ -12,8 +12,8 @@ jobs:
      runs-on: self-hosted
      env:
       OIDC_AUDIENCE: 'jfrog-github'
-      OIDC_PROVIDER: 'github'
-      PLATFORM_REPO: 'eks-npm'
+      OIDC_PROVIDER: 'github-oidc'
+      PLATFORM_REPO: 'npm-local'
      defaults:
       run:
         working-directory: ./package
