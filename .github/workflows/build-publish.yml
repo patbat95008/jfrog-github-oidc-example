@@ -13,7 +13,7 @@ jobs:
      env:
       OIDC_AUDIENCE: 'jfrog-github'
       OIDC_PROVIDER: 'github-oidc'
-      PLATFORM_REPO: 'npm-local'
+      PLATFORM_REPO: 'npm'
      defaults:
       run:
         working-directory: ./package
