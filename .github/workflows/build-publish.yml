@@ -36,7 +36,8 @@ jobs:
          run: jf npm-config --global=true --repo-resolve=$PLATFORM_REPO --repo-deploy=$PLATFORM_REPO
            
        - name: Install Dependencies
-         run: echo "test" > ./test.txt; jf rt u test.txt generic-local/; #jf npm install
+         # run: echo "test" > ./test.txt; jf rt u test.txt generic-local/; #Testing a generic upload
+         run: jf npm install
            
        - name: Run tests
          run: npm test
