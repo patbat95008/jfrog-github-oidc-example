@@ -33,10 +33,10 @@ jobs:
            oidc-audience: ${{ env.OIDC_AUDIENCE }}
 
        - name: Set CLI Config
-         run: jf npm-config --global=true --repo-resolve=$PLATFORM_REPO --repo-deploy=$PLATFORM_REPO
+         # run: jf npm-config --global=true --repo-resolve=$PLATFORM_REPO --repo-deploy=$PLATFORM_REPO; 
+         run: jf npm-config --repo-resolve=$PLATFORM_REPO --repo-deploy=$PLATFORM_REPO; 
            
        - name: Install Dependencies
-         # run: echo "test" > ./test.txt; jf rt u test.txt generic-local/; #Testing a generic upload
          run: jf npm install
            
        - name: Run tests
